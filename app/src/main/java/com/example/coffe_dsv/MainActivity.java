@@ -1,6 +1,8 @@
 package com.example.coffe_dsv;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void onButtonClick(View view) {
+        // Создание намерения для перехода на другую активность
+        Intent intent = new Intent(this, MainActivity2.class);
+        // Запуск активности
+        startActivity(intent);
     }
 }
