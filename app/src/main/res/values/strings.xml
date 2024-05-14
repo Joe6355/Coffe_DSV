@@ -3,7 +3,7 @@
     <string name="main_menu_text"> Меню </string>
     <string name="main_menu_drinks">Напитки</string>
     <string name="main_menu_food">Еда</string>
-    <string name="main_menu_atHomeCoffee">Коффе домой</string>
+    <string name="main_menu_atHomeCoffee">Домашний Кофе</string>
     <string name="main_menu_merchendise">Товары</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -12,6 +12,11 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="Login">Логин</string>
+    <string name="Mail">E-Mail</string>
+    <string name="Password">Пароль</string>
+    <string name="Enter">Зарегестрироваться/Войти</string>
+    <string name="JustEnter">Войти</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
