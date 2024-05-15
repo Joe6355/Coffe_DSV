@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/endpanel_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/MainBackground"
     tools:context=".LoginActivity">
 
 
@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="159dp" />
+        tools:layout_editor_absoluteY="170dp" />
 
     <EditText
         android:id="@+id/editTextTextLogin"
@@ -35,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="227dp" />
+        tools:layout_editor_absoluteY="237dp" />
 
     <EditText
         android:id="@+id/editTextTextPassword1"
@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="387dp" />
+        tools:layout_editor_absoluteY="375dp" />
 
     <TextView
         android:id="@+id/textViewPassword"
@@ -62,15 +62,16 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="329dp" />
+        tools:layout_editor_absoluteY="306dp" />
 
-    <Button
-        android:id="@+id/button"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEnter1"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="100dp"
         android:background="@drawable/desing2"
+        android:textColor="@color/white"
         android:text="@string/JustEnter"
-        android:textSize="30dp"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

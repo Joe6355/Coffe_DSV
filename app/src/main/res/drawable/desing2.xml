@@ -3,7 +3,7 @@
     <ripple android:color="?attr/colorControlHighlight">
         <item>
             <shape android:shape="rectangle"
-                android:tint="#FFFFFF">
+                android:tint="#FE9D75">
                 <corners android:radius="0dp"/>
             </shape>
         </item>

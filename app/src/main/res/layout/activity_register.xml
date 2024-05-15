@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/endpanel_main"
+    android:background="@drawable/MainBackground"
     tools:context=".RegisterActivity">
 
     <TextView
@@ -54,8 +54,8 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:ems="10"
         android:background="@drawable/desing1"
+        android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -89,14 +89,16 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="446dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:background="@drawable/desing2"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEnter"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@color/endpanel_main"
         android:text="@string/Enter"
-        android:textSize="30"
+        android:textColor="@color/white"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

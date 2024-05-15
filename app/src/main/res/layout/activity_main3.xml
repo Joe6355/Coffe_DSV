@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonEnter"
         android:layout_width="206dp"
         android:layout_height="76dp"
         android:text="Button"
