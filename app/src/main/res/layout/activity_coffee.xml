@@ -56,9 +56,9 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/ImageButtonHome"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
@@ -68,14 +68,18 @@
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/imagecoffee"
-                tools:src="@drawable/imagecoffee"
-                tools:srcCompat="@drawable/imagecoffee" />
+                android:src="@drawable/ImageHome"
+                android:background="@color/endpanel_main"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/ImageHome"
+                tools:srcCompat="@drawable/ImageHome" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/imageButtonBascet"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
                 android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
@@ -84,16 +88,19 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
+                android:background="@color/endpanel_main"
+                android:scaleType="fitCenter"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/imagecoffeeathome"
-                tools:src="@drawable/imagecat"
-                tools:srcCompat="@drawable/imagecoffee" />
+                android:src="@drawable/ImageBascet1"
+                tools:src="@drawable/ImageBascet1"
+                tools:srcCompat="@drawable/ImageBascet1" />
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/imageButtonEnter"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_margin="15dp"
+                android:layout_gravity="center"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
@@ -101,10 +108,12 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:background="@color/endpanel_main"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/imagecoffeeathome"
-                tools:src="@drawable/imagecat"
-                tools:srcCompat="@drawable/imagecoffee" />
+                android:src="@drawable/imageEnter1"
+                tools:src="@drawable/imageEnter1"
+                tools:srcCompat="@drawable/imageEnter1" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
