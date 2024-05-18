@@ -39,7 +39,7 @@
                 android:layout_gravity="center"
                 android:background="@color/endpanel_main"
                 tools:ignore="SpeakableTextPresentCheck"
-                android:src="@drawable/ImageHome"
+                android:src="@drawable/home"
                 android:scaleType="fitCenter" />
 
             <ImageButton
@@ -50,7 +50,7 @@
                 android:layout_gravity="center"
                 android:background="@color/endpanel_main"
                 tools:ignore="SpeakableTextPresentCheck"
-                android:src="@drawable/ImageBascet1"
+                android:src="@drawable/backet"
                 android:scaleType="fitCenter" /> />
 
             <ImageButton
@@ -61,7 +61,7 @@
                 android:layout_gravity="center"
                 android:background="@color/endpanel_main"
                 tools:ignore="SpeakableTextPresentCheck"
-                android:src="@drawable/imageEnter1"
+                android:src="@drawable/imageenter"
                 android:scaleType="fitCenter" /> />
         </LinearLayout>
 
