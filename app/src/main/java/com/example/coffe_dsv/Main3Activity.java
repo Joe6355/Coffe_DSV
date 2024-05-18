@@ -34,7 +34,19 @@ public class Main3Activity extends AppCompatActivity {
                 fragment = new LatteFragment();
             } else if (drinkType.equals("cappuccino")) {
                 fragment = new CappuccinoFragment();
-            }  // Добавьте другие варианты напитков здесь
+            } else if (drinkType.equals("raf")) {
+                fragment = new RafFragment();
+            } else if (drinkType.equals("americano")) {
+                fragment = new AmericanoFragment();
+            }else if (drinkType.equals("flatWhite")) {
+                fragment = new FlatWhiteFragment();
+            }else if (drinkType.equals("macchiato")) {
+                fragment = new macchiatoFragment();
+            }else if (drinkType.equals("lungo")) {
+                fragment = new LungoFragment();
+            }else if (drinkType.equals("brave")) {
+                fragment = new LungoFragment();
+            }
 
             // Отображаем фрагмент только если он был инициализирован
             if (fragment != null) {
