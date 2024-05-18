@@ -7,60 +7,81 @@
     tools:context=".RafFragment">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imagelatte"
         android:layout_width="match_parent"
         android:layout_height="357dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/imagecoffee" />
+        android:src="@drawable/raf" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:backgroundTint="@android:color/transparent" >
+        android:backgroundTint="@android:color/transparent">
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="183dp"
             android:layout_height="71dp"
             android:layout_marginTop="366dp"
-            android:text="Раф"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/raf"
             android:textSize="48sp"
             app:layout_constraintBottom_toTopOf="@+id/spinner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.592"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="707dp"
+            android:layout_width="147dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginBottom="232dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/spinner3"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="DuplicateClickableBoundsCheck" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Spinner
             android:id="@+id/spinner2"
+            android:layout_width="147dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="12dp"
             app:layout_constraintBottom_toTopOf="@+id/spinner3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/spinner"
-            app:layout_constraintTop_toBottomOf="@+id/textView8"
-            android:layout_width="0dp"
-            android:layout_height="0dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <Spinner
             android:id="@+id/spinner3"
-            android:layout_width="0dp"
+            android:layout_width="246dp"
             android:layout_height="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="71dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonaddtotheorder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/endpanel_main"
+            android:text="@string/addtothehorder"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

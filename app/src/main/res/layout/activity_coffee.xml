@@ -68,12 +68,12 @@
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/imagecoffee"
+                android:src="@drawable/home"
                 android:background="@color/endpanel_main"
                 android:layout_gravity="center"
                 android:scaleType="fitCenter"
-                tools:src="@drawable/imagecoffee"
-                tools:srcCompat="@drawable/imagecoffee" />
+                tools:src="@drawable/home"
+                tools:srcCompat="@drawable/home" />
 
             <ImageButton
                 android:id="@+id/imageButtonBascet"
@@ -91,9 +91,9 @@
                 android:background="@color/endpanel_main"
                 android:scaleType="fitCenter"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/imagecoffee"
-                tools:src="@drawable/imagecoffee"
-                tools:srcCompat="@drawable/imagecoffee" />
+                android:src="@drawable/backet"
+                tools:src="@drawable/backet"
+                tools:srcCompat="@drawable/backet" />
 
             <ImageButton
                 android:id="@+id/imageButtonEnter"
@@ -111,9 +111,9 @@
                 android:scaleType="fitCenter"
                 android:background="@color/endpanel_main"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/imagecoffee"
-                tools:src="@drawable/imagecoffee"
-                tools:srcCompat="@drawable/imagecoffee" />
+                android:src="@drawable/imageenter"
+                tools:src="@drawable/imageenter"
+                tools:srcCompat="@drawable/imageenter" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,24 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/latte"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@android:color/transparent"
     android:backgroundTint="@android:color/transparent"
     tools:context=".LatteFragment">
 
+
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imagelatte"
         android:layout_width="match_parent"
         android:layout_height="357dp"
+        android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/imagecoffee" />
+        android:src="@drawable/latte" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:backgroundTint="@android:color/transparent" >
+        android:backgroundTint="@android:color/transparent">
 
         <TextView
             android:id="@+id/textView8"
@@ -28,11 +30,12 @@
             android:layout_height="71dp"
             android:layout_marginTop="366dp"
             android:layout_marginBottom="16dp"
-            android:text="Латте"
+            android:gravity="center"
+            android:text="@string/latte"
             android:textSize="48sp"
             app:layout_constraintBottom_toTopOf="@+id/spinner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.592"
+            app:layout_constraintHorizontal_bias="0.539"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,8 +43,8 @@
             android:id="@+id/spinner"
             android:layout_width="147dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="232dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginBottom="232dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -69,6 +72,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonaddtotheorder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/endpanel_main"
+            android:text="@string/addtothehorder"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
