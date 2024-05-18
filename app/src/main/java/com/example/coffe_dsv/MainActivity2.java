@@ -42,5 +42,35 @@ public class MainActivity2 extends AppCompatActivity {
         intent.putExtra("drink_type", "cappuccino");
         startActivity(intent);
     }
+    public void onRafButtonClick(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        intent.putExtra("drink_type", "raf");
+        startActivity(intent);
+    }
+    public void onAmericanoButtonClick(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        intent.putExtra("drink_type", "americano");
+        startActivity(intent);
+    }
+    public void onFlatWhiteButtonClick(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        intent.putExtra("drink_type", "flatWhite");
+        startActivity(intent);
+    }
+    public void onMacchiatoButtonClick(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        intent.putExtra("drink_type", "macchiato");
+        startActivity(intent);
+    }
+    public void onLungoButtonClick(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        intent.putExtra("drink_type", "lungo");
+        startActivity(intent);
+    }
+    public void onBraveButtonClick(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        intent.putExtra("drink_type", "brave");
+        startActivity(intent);
+    }
 
 }
