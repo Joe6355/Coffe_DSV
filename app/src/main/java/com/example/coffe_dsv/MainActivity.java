@@ -1,5 +1,7 @@
 package com.example.coffe_dsv;
 
+import static com.example.coffe_dsv.R.*;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,9 +27,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        // Создание намерения для перехода на другую активность
-        Intent intent = new Intent(this, MainActivity2.class);
-        // Запуск активности
-        startActivity(intent);
+        Intent intent = null;
+
+        if (view.getId() == R.id.button_coffe) {
+            intent = new Intent(this, MainActivity2.class);
+        } else if (view.getId() == R.id.button_eat) {
+            intent = new Intent(this, MainActivity2.class);
+        } else {
+            intent = new Intent(this, MainActivity.class);
+            return;
+        }
+
+        if (intent != null) {
+            startActivity(intent);
+        }
     }
 }
