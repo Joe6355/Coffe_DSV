@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick(View view) {
         Intent intent = null;
 
-        if (view.getId() == R.id.button_cup) {
+        if (view.getId() == R.id.button_fritter) {
             intent = new Intent(this, MainActivity2.class);
-        } else if (view.getId() == R.id.button_zerna2) {
+        } else if (view.getId() == R.id.button_omlet) {
             intent = new Intent(this, EatActivity.class);
         } else if (view.getId()  == R.id.button_sandwiches){
             intent = new Intent(this, CoffeeAtHomeActivity.class);
-        } else if (view.getId()  == R.id.button_merchendise) {
+        } else if (view.getId()  == R.id.button_pancakes) {
             intent = new Intent(this, MerchndiseActivity.class);
         }
         else {
