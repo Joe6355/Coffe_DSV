@@ -39,9 +39,10 @@
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/imageView5"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
 
         <LinearLayout
@@ -147,13 +148,13 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/gray"
-                    android:onClick="onLatteButtonClick"
-                    android:text="@string/latte"
+                    android:backgroundTint="@android:color/transparent"
                     android:gravity="bottom|center"
+                    android:onClick="onLatteButtonClick"
                     android:paddingBottom="20dp"
-                    android:textSize="30sp"
+                    android:text="@string/latte"
                     android:textColor="#000000"
+                    android:textSize="30sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -162,6 +163,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:src="@drawable/latte" />
 
 
@@ -179,13 +181,13 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/gray"
-                    android:onClick="onCappuccinoButtonClick"
+                    android:backgroundTint="@android:color/transparent"
                     android:gravity="bottom|center"
+                    android:onClick="onCappuccinoButtonClick"
                     android:paddingBottom="20dp"
-                    android:textSize="30sp"
                     android:text="@string/cappuchino"
                     android:textColor="#000000"
+                    android:textSize="30sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -194,6 +196,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:src="@drawable/cappuchhino"
                     android:visibility="visible" />
             </FrameLayout>
@@ -206,18 +209,18 @@
                     android:id="@+id/button_raf"
                     android:layout_width="400dp"
                     android:layout_height="90dp"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/gray"
-                    android:onClick="onRafButtonClick"
-                    android:text="Раф"
+                    android:backgroundTint="@android:color/transparent"
                     android:gravity="bottom|center"
+                    android:onClick="onRafButtonClick"
                     android:paddingBottom="20dp"
-                    android:textSize="30sp"
-                    android:layout_gravity="center"
+                    android:text="@string/raf"
                     android:textColor="#000000"
+                    android:textSize="30sp"
                     android:visibility="visible"
                     app:cornerRadius="0dp" />
 
@@ -227,6 +230,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:src="@drawable/raf"
                     android:visibility="visible" />
             </FrameLayout>
@@ -237,17 +241,17 @@
 
                 <Button
                     android:id="@+id/button_americano"
-                    android:layout_width="387dp"
+                    android:layout_width="396dp"
                     android:layout_height="90dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/gray"
+                    android:backgroundTint="@android:color/transparent"
                     android:onClick="onAmericanoButtonClick"
                     android:text="@string/americano"
-                    android:textSize="30sp"
                     android:textColor="#000000"
+                    android:textSize="30sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -256,6 +260,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:src="@drawable/americano"
                     android:visibility="visible" />
             </FrameLayout>
@@ -272,11 +277,11 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/gray"
+                    android:backgroundTint="@android:color/transparent"
                     android:onClick="onFlatWhiteButtonClick"
                     android:text="@string/flat_white"
-                    android:textSize="30sp"
                     android:textColor="#000000"
+                    android:textSize="30sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -285,6 +290,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:src="@drawable/flatwhite"
                     android:visibility="visible" />
             </FrameLayout>
@@ -301,7 +307,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/gray"
+                    android:backgroundTint="@android:color/transparent"
                     android:onClick="onMacchiatoButtonClick"
                     android:text="@string/macchiato"
                     android:textColor="#000000"
@@ -314,6 +320,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:src="@drawable/macchiato"
                     android:visibility="visible" />
             </FrameLayout>
@@ -330,11 +337,11 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/gray"
+                    android:backgroundTint="@android:color/transparent"
                     android:onClick="onLungoButtonClick"
                     android:text="@string/lungo"
-                    android:textSize="30sp"
                     android:textColor="#000000"
+                    android:textSize="30sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -343,6 +350,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:backgroundTint="@android:color/transparent"
                     android:src="@drawable/lungo"
                     android:visibility="visible" />
             </FrameLayout>
@@ -359,7 +367,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/gray"
+                    android:backgroundTint="@android:color/transparent"
                     android:onClick="onBraveButtonClick"
                     android:text="@string/brave"
                     android:textColor="#000000"
@@ -372,6 +380,8 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:background="@android:color/transparent"
                     android:src="@drawable/breve"
                     android:visibility="visible" />
             </FrameLayout>
