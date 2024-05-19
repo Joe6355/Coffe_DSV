@@ -25,9 +25,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        // Создание намерения для перехода на другую активность
-        Intent intent = new Intent(this, MainActivity2.class);
-        // Запуск активности
-        startActivity(intent);
+        Intent intent = null;
+
+        if (view.getId() == R.id.button_cup) {
+            intent = new Intent(this, MainActivity2.class);
+        } else if (view.getId() == R.id.button_zerna2) {
+            intent = new Intent(this, EatActivity.class);
+        } else if (view.getId()  == R.id.button_sandwiches){
+            intent = new Intent(this, CoffeeAtHomeActivity.class);
+        } else if (view.getId()  == R.id.button_merchendise) {
+            intent = new Intent(this, MerchndiseActivity.class);
+        }
+        else {
+            intent = new Intent(this, MainActivity.class);
+            return;
+        }
+
+        if (intent != null) {
+            startActivity(intent);
+        }
     }
 }
