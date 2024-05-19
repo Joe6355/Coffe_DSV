@@ -118,7 +118,7 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_coffee"
+                                android:id="@+id/button_cup"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
@@ -149,7 +149,7 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_eat"
+                                android:id="@+id/button_zerna2"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
@@ -207,7 +207,7 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_omelet"
+                                android:id="@+id/button_merchendise"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"

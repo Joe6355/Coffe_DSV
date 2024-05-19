@@ -54,6 +54,12 @@ public class Main3Activity extends AppCompatActivity {
                 fragment = new SandwichFragment();
             }else if (drinkType.equals("omelet")) {
                 fragment = new OmletFragment();
+            }else if (drinkType.equals("zerno1")) {
+                fragment = new Zerno1Fragment();
+            }else if (drinkType.equals("zerno2")) {
+                fragment = new Zerno2Fragment();
+            }else if (drinkType.equals("cup")) {
+                fragment = new CupFragment();
             }
 
             // Отображаем фрагмент только если он был инициализирован

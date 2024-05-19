@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Coffe_DSV"
         tools:targetApi="31">
         <activity
+            android:name=".MerchndiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CoffeeAtHomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".EatActivity"
             android:exported="false" />
         <activity
