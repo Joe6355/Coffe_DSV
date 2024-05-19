@@ -140,7 +140,7 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:id="@+id/button_coffe"
+                    android:id="@+id/button_coffee"
                     android:layout_width="387dp"
                     android:layout_height="90dp"
                     android:layout_marginLeft="10dp"
@@ -197,7 +197,7 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:id="@+id/button_raf"
+                    android:id="@+id/button_sandwiches"
                     android:layout_width="387dp"
                     android:layout_height="90dp"
                     android:layout_marginLeft="10dp"
@@ -226,7 +226,7 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:id="@+id/button_americano"
+                    android:id="@+id/button_omelet"
                     android:layout_width="387dp"
                     android:layout_height="90dp"
                     android:layout_marginLeft="10dp"

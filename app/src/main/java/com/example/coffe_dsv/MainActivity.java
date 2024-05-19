@@ -1,7 +1,5 @@
 package com.example.coffe_dsv;
 
-import static com.example.coffe_dsv.R.*;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,11 +27,16 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick(View view) {
         Intent intent = null;
 
-        if (view.getId() == R.id.button_coffe) {
+        if (view.getId() == R.id.button_coffee) {
             intent = new Intent(this, MainActivity2.class);
         } else if (view.getId() == R.id.button_eat) {
+            intent = new Intent(this, EatActivity.class);
+        } else if (view.getId()  == R.id.button_sandwiches){
             intent = new Intent(this, MainActivity2.class);
-        } else {
+        } else if (view.getId()  == R.id.button_omelet) {
+            intent = new Intent(this, MainActivity2.class);
+        }
+        else {
             intent = new Intent(this, MainActivity.class);
             return;
         }

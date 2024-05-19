@@ -46,6 +46,14 @@ public class Main3Activity extends AppCompatActivity {
                 fragment = new LungoFragment();
             }else if (drinkType.equals("brave")) {
                 fragment = new LungoFragment();
+            }else if (drinkType.equals("pancakes")) {
+                fragment = new PancakesFragment();
+            }else if (drinkType.equals("fritter")) {
+                fragment = new FritterFragment();
+            }else if (drinkType.equals("sandwiches")) {
+                fragment = new SandwichFragment();
+            }else if (drinkType.equals("omelet")) {
+                fragment = new OmletFragment();
             }
 
             // Отображаем фрагмент только если он был инициализирован
