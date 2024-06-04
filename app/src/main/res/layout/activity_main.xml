@@ -39,7 +39,7 @@
                 android:layout_gravity="center"
                 android:background="@color/endpanel_main"
                 tools:ignore="SpeakableTextPresentCheck"
-                android:src="@drawable/imagecoffee"
+                android:src="@drawable/home"
                 android:scaleType="fitCenter" />
 
             <ImageButton
@@ -50,7 +50,7 @@
                 android:layout_gravity="center"
                 android:background="@color/endpanel_main"
                 tools:ignore="SpeakableTextPresentCheck"
-                android:src="@drawable/imagecoffee"
+                android:src="@drawable/backet"
                 android:scaleType="fitCenter" /> />
 
             <ImageButton
@@ -61,7 +61,7 @@
                 android:layout_gravity="center"
                 android:background="@color/endpanel_main"
                 tools:ignore="SpeakableTextPresentCheck"
-                android:src="@drawable/imagecoffee"
+                android:src="@drawable/imageenter"
                 android:scaleType="fitCenter" /> />
         </LinearLayout>
 
@@ -118,7 +118,7 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_cup"
+                                android:id="@+id/button_fritter"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
@@ -149,7 +149,7 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_zerna2"
+                                android:id="@+id/button_omlet"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
@@ -207,7 +207,7 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_merchendise"
+                                android:id="@+id/button_pancakes"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"

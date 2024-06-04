@@ -5,6 +5,21 @@
     <string name="main_menu_food">Еда</string>
     <string name="main_menu_atHomeCoffee">Домашний Кофе</string>
     <string name="main_menu_merchendise">Товары</string>
+    <string name="latte">Латте</string>
+    <string name="raf">Раф</string>
+    <string name="coffe1">Lebo Gold</string>
+    <string name="coffe2">Noir, Egoiste</string>
+    <string name="flat_white">Флэт вайт</string>
+    <string name="brave">Брав</string>
+    <string name="americano">Американо</string>
+    <string name="cappuchino">Капучино</string>
+    <string name="lungo">Лунго</string>
+    <string name="macchiato">Маккиато</string>
+    <string name="cup">Кружка</string>
+    <string name="omlet">Омлет</string>
+    <string name="pancakes">Блины</string>
+    <string name="sandwich">Бутерброд</string>
+    <string name="fritter">Оладьи</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -17,6 +32,9 @@
     <string name="Password">Пароль</string>
     <string name="Enter">Зарегестрироваться/Войти</string>
     <string name="JustEnter">Войти</string>
+    <string name="order">Заказать</string>
+    <string name="addtothehorder">Добавить к заказу</string>
+    <string name="nopemerchendais">ТОВАР ОТСУТСВУЕТ</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>

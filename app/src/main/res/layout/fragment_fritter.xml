@@ -12,7 +12,7 @@
         android:layout_height="357dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/imagecoffee" />
+        android:src="@drawable/fritter" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -24,20 +24,22 @@
             android:layout_width="183dp"
             android:layout_height="71dp"
             android:layout_marginTop="366dp"
-            android:text="Оладьи"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/fritter"
             android:textSize="48sp"
             app:layout_constraintBottom_toTopOf="@+id/spinner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.592"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="147dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="232dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginBottom="232dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -65,6 +67,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonaddtotheorder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/endpanel_main"
+            android:text="@string/addtothehorder"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
