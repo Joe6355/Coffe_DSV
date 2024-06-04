@@ -17,6 +17,15 @@
             android:exported="false"
             android:theme="@style/Theme.Coffe_DSV" />
         <activity
+            android:name=".MerchndiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CoffeeAtHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EatActivity"
+            android:exported="false" />
+        <activity
             android:name=".Main3Activity"
             android:exported="false" />
         <activity
