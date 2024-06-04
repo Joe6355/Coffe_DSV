@@ -154,7 +154,7 @@
                     android:paddingBottom="20dp"
                     android:text="@string/latte"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -187,7 +187,7 @@
                     android:paddingBottom="20dp"
                     android:text="@string/cappuchino"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -220,7 +220,7 @@
                     android:paddingBottom="20dp"
                     android:text="@string/raf"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:visibility="visible"
                     app:cornerRadius="0dp" />
 
@@ -251,7 +251,7 @@
                     android:onClick="onAmericanoButtonClick"
                     android:text="@string/americano"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -281,7 +281,7 @@
                     android:onClick="onFlatWhiteButtonClick"
                     android:text="@string/flat_white"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -311,7 +311,7 @@
                     android:onClick="onMacchiatoButtonClick"
                     android:text="@string/macchiato"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -341,7 +341,7 @@
                     android:onClick="onLungoButtonClick"
                     android:text="@string/lungo"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
@@ -371,7 +371,7 @@
                     android:onClick="onBraveButtonClick"
                     android:text="@string/brave"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     app:cornerRadius="0dp" />
 
                 <ImageView
