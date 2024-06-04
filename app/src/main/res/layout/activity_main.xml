@@ -40,18 +40,11 @@
                 android:background="@color/endpanel_main"
                 tools:ignore="SpeakableTextPresentCheck"
                 android:src="@drawable/home"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter" /><![CDATA[
 
-            <ImageButton
-                android:id="@+id/Image_button_bascet"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:background="@color/endpanel_main"
-                tools:ignore="SpeakableTextPresentCheck"
-                android:src="@drawable/backet"
-                android:scaleType="fitCenter" /> />
+            />
+
+            ]]>
 
             <ImageButton
                 android:id="@+id/image_button_enter"
@@ -230,6 +223,18 @@
                                 android:src="@drawable/imagemerchndise"
                                 android:visibility="visible" />
                         </FrameLayout>
+
+                        <ImageButton
+                            android:id="@+id/Image_button_bascet"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/endpanel_main"
+                            android:onClick="onButtonClick"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/backet"
+                            tools:ignore="SpeakableTextPresentCheck" />
 
 
                     </LinearLayout>

@@ -2,8 +2,10 @@ package com.example.coffe_dsv;
 
 import android.os.Bundle;
 
+import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +18,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class Main3Activity extends AppCompatActivity {
 
-
+    public int item_product;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,35 +34,51 @@ public class Main3Activity extends AppCompatActivity {
 
             if (drinkType.equals("latte")) {
                 fragment = new LatteFragment();
+                item_product = 1;
             } else if (drinkType.equals("cappuccino")) {
                 fragment = new CappuccinoFragment();
+                item_product = 2;
             } else if (drinkType.equals("raf")) {
                 fragment = new RafFragment();
+                item_product = 3;
             } else if (drinkType.equals("americano")) {
                 fragment = new AmericanoFragment();
+                item_product = 1;
             }else if (drinkType.equals("flatWhite")) {
                 fragment = new FlatWhiteFragment();
+                item_product = 1;
             }else if (drinkType.equals("macchiato")) {
                 fragment = new macchiatoFragment();
+                item_product = 1;
             }else if (drinkType.equals("lungo")) {
                 fragment = new LungoFragment();
+                item_product = 1;
             }else if (drinkType.equals("brave")) {
                 fragment = new LungoFragment();
+                item_product = 1;
             }else if (drinkType.equals("pancakes")) {
                 fragment = new PancakesFragment();
+                item_product = 1;
             }else if (drinkType.equals("fritter")) {
                 fragment = new FritterFragment();
+                item_product = 1;
             }else if (drinkType.equals("sandwiches")) {
                 fragment = new SandwichFragment();
+                item_product = 1;
             }else if (drinkType.equals("omelet")) {
                 fragment = new OmletFragment();
+                item_product = 1;
             }else if (drinkType.equals("zerno1")) {
                 fragment = new Zerno1Fragment();
+                item_product = 1;
             }else if (drinkType.equals("zerno2")) {
                 fragment = new Zerno2Fragment();
+                item_product = 1;
             }else if (drinkType.equals("cup")) {
                 fragment = new CupFragment();
+                item_product = 1;
             }
+
 
             // Отображаем фрагмент только если он был инициализирован
             if (fragment != null) {
@@ -71,5 +89,11 @@ public class Main3Activity extends AppCompatActivity {
                 // Например, отображение сообщения об ошибке
             }
         }
+
+    }
+    public void addToCart(View view){
+        int item_id = item_product;
+        Order.items_id.add(item_id);
+        Toast.makeText(this, "Товар добавлен в корзину", Toast.LENGTH_LONG).show();
     }
 }
