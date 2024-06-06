@@ -16,6 +16,7 @@
         android:text="@string/Login"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +24,7 @@
         tools:layout_editor_absoluteY="170dp" />
 
     <EditText
-        android:id="@+id/editTextTextLogin"
+        android:id="@+id/LogIn_email"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:background="@drawable/desing1"
@@ -38,13 +39,13 @@
         tools:layout_editor_absoluteY="237dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword1"
+        android:id="@+id/SignUp_password"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:background="@drawable/desing1"
         android:ems="10"
         android:inputType="textPassword"
-        android:textColor="#FFFFFF"
+        android:textColor="#050505"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,8 +65,9 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="306dp" />
 
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonEnter1"
+        android:id="@+id/LogIn_btn"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@drawable/desing2"
@@ -75,4 +77,30 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/SignUp_password"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="177dp"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/LogIn_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp_password" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
