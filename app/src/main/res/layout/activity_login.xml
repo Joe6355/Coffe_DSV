@@ -41,7 +41,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLogin"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/SignUp_password"
@@ -80,14 +80,16 @@
         android:id="@+id/LogIn_btn"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginTop="630dp"
         android:background="@drawable/desing2"
-        android:textColor="@color/white"
-        android:text="@string/JustEnter"
-        android:textSize="40sp"
         android:gravity="center"
+        android:text="@string/JustEnter"
+        android:textColor="@color/white"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="wrap_content"
