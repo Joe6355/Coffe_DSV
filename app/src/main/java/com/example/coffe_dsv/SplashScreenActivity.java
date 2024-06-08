@@ -7,7 +7,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 3000; // время показа загрузочного экрана (в миллисекундах)
+    private static int SPLASH_TIME_OUT = 1500; // время показа загрузочного экрана (в миллисекундах)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

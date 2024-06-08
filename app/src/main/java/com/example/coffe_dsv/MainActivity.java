@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
+
+
         });
     }
 
@@ -31,19 +35,19 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(this, MainActivity2.class);
         } else if (view.getId() == R.id.button_eat) {
             intent = new Intent(this, EatActivity.class);
-        } else if (view.getId()  == R.id.button_coffe_at_home){
+        } else if (view.getId() == R.id.button_coffe_at_home) {
             intent = new Intent(this, CoffeeAtHomeActivity.class);
-        } else if (view.getId()  == R.id.button_merchendise) {
+        } else if (view.getId() == R.id.button_merchendise) {
             intent = new Intent(this, MerchndiseActivity.class);
-        }
-        else {
+        } else {
             intent = new Intent(this, MainActivity.class);
             return;
         }
 
         if (intent != null) {
             startActivity(intent);
+
         }
+
     }
 }
-

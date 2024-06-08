@@ -17,7 +17,7 @@
         android:text="@string/Login"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/SignUp_email"
+        app:layout_constraintBottom_toTopOf="@+id/LogIn_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/SignUp_email"
+        android:id="@+id/LogIn_email"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
@@ -39,10 +39,10 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLogin1"
-        tools:ignore="Autofill,LabelFor,MissingConstraints,TextFields,TouchTargetSizeCheck" />
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextFields,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/SignUp_password"
+        android:id="@+id/LogIn_password"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
@@ -83,11 +83,11 @@
         android:text="@string/Password"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/SignUp_password"
+        app:layout_constraintBottom_toTopOf="@+id/LogIn_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUp_email"
+        app:layout_constraintTop_toBottomOf="@+id/LogIn_email"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -96,7 +96,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:text="ПАРОЛЬ"
+        android:text="@string/Password"
         android:gravity="center"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUp_password"
+        app:layout_constraintTop_toBottomOf="@+id/LogIn_password"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
