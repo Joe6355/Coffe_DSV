@@ -8,11 +8,13 @@
 
     <ImageView
         android:id="@+id/imagelatte"
-        android:layout_width="match_parent"
+        android:layout_width="376dp"
         android:layout_height="357dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/americano" />
+        android:src="@drawable/americano"
+        android:translationX="33dp"
+        android:visibility="visible" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,26 +23,23 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="355dp"
-            android:layout_height="66dp"
+            android:layout_width="300dp"
+            android:layout_height="71dp"
             android:layout_marginTop="366dp"
-            android:layout_marginBottom="16dp"
-            android:gravity="center"
             android:text="@string/americano"
             android:textSize="48sp"
+            android:gravity="center"
             app:layout_constraintBottom_toTopOf="@+id/spinner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.447"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="147dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="220dp"
-            android:layout_marginBottom="232dp"
+            android:layout_marginEnd="232dp"
+            android:layout_marginBottom="60dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -54,9 +53,9 @@
             android:layout_marginBottom="12dp"
             app:layout_constraintBottom_toTopOf="@+id/spinner3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/spinner"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintVertical_bias="1.0" />
 
         <Spinner
             android:id="@+id/spinner3"
@@ -69,18 +68,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonaddtotheorder"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/endpanel_main"
-            android:text="@string/addtothehorder"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TextContrastCheck" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

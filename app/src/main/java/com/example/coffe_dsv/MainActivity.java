@@ -27,16 +27,14 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick(View view) {
         Intent intent = null;
 
-        if (view.getId() == R.id.button_fritter) {
+        if (view.getId() == R.id.button_coffe) {
             intent = new Intent(this, MainActivity2.class);
-        } else if (view.getId() == R.id.button_omlet) {
+        } else if (view.getId() == R.id.button_eat) {
             intent = new Intent(this, EatActivity.class);
-        } else if (view.getId()  == R.id.button_sandwiches){
+        } else if (view.getId()  == R.id.button_coffe_at_home){
             intent = new Intent(this, CoffeeAtHomeActivity.class);
-        } else if (view.getId()  == R.id.button_pancakes) {
+        } else if (view.getId()  == R.id.button_merchendise) {
             intent = new Intent(this, MerchndiseActivity.class);
-        }else if (view.getId()  == R.id.Image_button_bascet) {
-            intent = new Intent(this, CorzinaActivity.class);
         }
         else {
             intent = new Intent(this, MainActivity.class);
@@ -48,3 +46,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+

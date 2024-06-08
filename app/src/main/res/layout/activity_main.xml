@@ -5,58 +5,102 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/bgmenu"
+    android:background="@color/bgmenu"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="438dp"
             android:layout_height="115dp"
             android:background="@color/endpanel_main"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="621dp" />
+            tools:visibility="visible" />
 
         <LinearLayout
             android:layout_width="413dp"
             android:layout_height="110dp"
             android:layout_marginTop="621dp"
             android:orientation="horizontal"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ExtraText">
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/image_button_home"
-                android:layout_width="100dp"
+                android:id="@+id/ImageButtonHome"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
                 android:background="@color/endpanel_main"
-                tools:ignore="SpeakableTextPresentCheck"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
                 android:src="@drawable/home"
-                android:scaleType="fitCenter" /><![CDATA[
-
-            />
-
-            ]]>
+                android:translationY="30dp"
+                tools:src="@drawable/home"
+                tools:srcCompat="@drawable/home" />
 
             <ImageButton
-                android:id="@+id/image_button_enter"
-                android:layout_width="100dp"
+                android:id="@+id/imageButtonBascet"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:translationY="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
                 android:background="@color/endpanel_main"
-                tools:ignore="SpeakableTextPresentCheck"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/backet"
+                tools:src="@drawable/backet"
+                tools:srcCompat="@drawable/backet" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:translationY="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="@color/endpanel_main"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
                 android:src="@drawable/imageenter"
-                android:scaleType="fitCenter" /> />
+                tools:src="@drawable/imageenter"
+                tools:srcCompat="@drawable/imageenter" />
         </LinearLayout>
+
 
         <ScrollView
             android:id="@+id/scrollView2"
@@ -89,6 +133,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:backgroundTint="@android:color/transparent"
                             android:contentDescription="@string/app_name"
                             app:srcCompat="@drawable/ic_launcher_foreground" />
 
@@ -106,28 +151,41 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/linearLayout_promotion">
 
+                        <ImageButton
+                            android:id="@+id/Image_button_bascet"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/endpanel_main"
+                            android:onClick="onButtonClick"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/backet"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
                         <FrameLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_fritter"
+                                android:id="@+id/button_coffe"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:backgroundTint="@color/gray"
+                                android:backgroundTint="@android:color/transparent"
                                 android:onClick="onButtonClick"
                                 android:text="@string/main_menu_drinks"
+                                android:textSize="20sp"
                                 android:textColor="#000000"
+                                android:visibility="visible"
                                 app:cornerRadius="0dp" />
 
                             <ImageView
                                 android:id="@+id/Image_coffe"
                                 android:layout_width="109dp"
-
                                 android:layout_height="89dp"
                                 android:layout_marginStart="10dp"
                                 android:layout_marginTop="5dp"
@@ -142,17 +200,19 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_omlet"
+                                android:id="@+id/button_eat"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:backgroundTint="@color/gray"
+                                android:backgroundTint="@android:color/transparent"
                                 android:onClick="onButtonClick"
                                 android:text="@string/main_menu_food"
+                                android:textSize="20sp"
                                 android:textColor="#000000"
+                                android:visibility="visible"
                                 app:cornerRadius="0dp" />
 
                             <ImageView
@@ -171,17 +231,19 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_sandwiches"
+                                android:id="@+id/button_coffe_at_home"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:backgroundTint="@color/gray"
+                                android:backgroundTint="@android:color/transparent"
                                 android:onClick="onButtonClick"
+                                android:textSize="20sp"
                                 android:text="@string/main_menu_atHomeCoffee"
                                 android:textColor="#000000"
+                                android:visibility="visible"
                                 app:cornerRadius="0dp" />
 
                             <ImageView
@@ -200,17 +262,19 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button_pancakes"
+                                android:id="@+id/button_merchendise"
                                 android:layout_width="387dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_marginBottom="10dp"
-                                android:backgroundTint="@color/gray"
+                                android:backgroundTint="@android:color/transparent"
                                 android:onClick="onButtonClick"
+                                android:textSize="20sp"
                                 android:text="@string/main_menu_merchendise"
                                 android:textColor="#000000"
+                                android:visibility="visible"
                                 app:cornerRadius="0dp" />
 
                             <ImageView
@@ -223,18 +287,6 @@
                                 android:src="@drawable/imagemerchndise"
                                 android:visibility="visible" />
                         </FrameLayout>
-
-                        <ImageButton
-                            android:id="@+id/Image_button_bascet"
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/endpanel_main"
-                            android:onClick="onButtonClick"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/backet"
-                            tools:ignore="SpeakableTextPresentCheck" />
 
 
                     </LinearLayout>
