@@ -106,6 +106,18 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/linearLayout_promotion">
 
+                        <ImageButton
+                            android:id="@+id/Image_button_bascet"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/endpanel_main"
+                            android:onClick="onButtonClick"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/backet"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
                         <FrameLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
@@ -223,18 +235,6 @@
                                 android:src="@drawable/imagemerchndise"
                                 android:visibility="visible" />
                         </FrameLayout>
-
-                        <ImageButton
-                            android:id="@+id/Image_button_bascet"
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/endpanel_main"
-                            android:onClick="onButtonClick"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/backet"
-                            tools:ignore="SpeakableTextPresentCheck" />
 
 
                     </LinearLayout>
