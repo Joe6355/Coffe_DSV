@@ -6,114 +6,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/imagebackground"
-    tools:context=".LogInActivity">
+    tools:context=".LoginActivity">
 
 
     <TextView
-        android:id="@+id/textViewLogin1"
+        android:id="@+id/textViewLogin"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="170dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
         android:text="@string/Login"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/LogIn_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="170dp" />
 
     <EditText
-        android:id="@+id/LogIn_email"
+        android:id="@+id/editTextTextLogin"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
         android:background="@drawable/desing1"
         android:ems="10"
         android:inputType="text"
+        android:text="@string/Login"
         android:textColor="#050505"
-        app:layout_constraintBottom_toTopOf="@+id/textViewPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLogin1"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteY="237dp" />
 
     <EditText
-        android:id="@+id/SignUp_password"
+        android:id="@+id/editTextTextPassword1"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
         android:background="@drawable/desing1"
         android:ems="10"
         android:inputType="textPassword"
-        android:textColor="#050505"
-        app:layout_constraintBottom_toTopOf="@+id/text_SignUp"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPassword"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteY="375dp" />
 
     <TextView
         android:id="@+id/textViewPassword"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
         android:text="@string/Password"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/SignUp_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogIn_email"
-        tools:ignore="MissingConstraints" />
-
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="486dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/LogIn_btn"
+        android:id="@+id/buttonEnter1"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="630dp"
         android:background="@drawable/desing2"
-        android:gravity="center"
-        android:text="@string/JustEnter"
         android:textColor="@color/white"
+        android:text="@string/JustEnter"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/SignUp_password"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        >
-
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/text_SignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="177dp"
-        android:text="Зарегистрироваться"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/LogIn_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUp_password" />
-
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
