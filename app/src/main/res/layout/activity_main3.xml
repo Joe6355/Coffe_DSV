@@ -9,44 +9,48 @@
 
     <FrameLayout
         android:id="@+id/frame_layout"
-        android:layout_width="399dp"
-        android:layout_height="575dp"
-        android:layout_marginBottom="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
         android:background="@android:color/transparent"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.00999999">
+        app:layout_constraintTop_toBottomOf="@+id/imageView52"
+        app:layout_constraintVertical_bias="0.0">
 
     </FrameLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginStart="2dp"
+        android:id="@+id/imageView52"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginBottom="498dp"
         android:background="@color/endpanel_main"
-        app:layout_constraintBottom_toTopOf="@+id/frame_layout"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/add_to_bascet"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="32dp"
         android:background="@color/endpanel_main"
         android:text="@string/addtothehorder"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frame_layout"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

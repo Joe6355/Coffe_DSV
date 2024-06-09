@@ -14,24 +14,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="438dp"
-            android:layout_height="115dp"
-            android:background="@color/endpanel_main"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:visibility="visible" />
-
         <LinearLayout
             android:layout_width="413dp"
             android:layout_height="110dp"
             android:layout_marginTop="621dp"
             android:orientation="horizontal"
             android:visibility="visible"
+            android:background="@color/endpanel_main"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +30,6 @@
                 android:id="@+id/ImageButtonHome"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_gravity="center"
                 android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
@@ -50,37 +38,36 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
-                android:background="@color/endpanel_main"
                 android:contentDescription="@string/app_name"
-                android:scaleType="fitCenter"
                 android:src="@drawable/home"
-                android:translationY="30dp"
+                android:background="@color/endpanel_main"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
                 tools:src="@drawable/home"
                 tools:srcCompat="@drawable/home" />
 
             <ImageButton
                 android:id="@+id/imageButtonBascet"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
                 android:layout_gravity="center"
+                android:layout_height="50dp"
                 android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
-                android:translationY="30dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
                 android:background="@color/endpanel_main"
-                android:contentDescription="@string/app_name"
                 android:scaleType="fitCenter"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/backet"
                 tools:src="@drawable/backet"
                 tools:srcCompat="@drawable/backet" />
 
             <ImageButton
-                android:id="@+id/logoutButton"
+                android:id="@+id/button_logout"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
@@ -88,7 +75,6 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
-                android:translationY="30dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
@@ -164,12 +150,12 @@
                             tools:ignore="SpeakableTextPresentCheck" />
 
                         <FrameLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
                             <Button
                                 android:id="@+id/button_coffe"
-                                android:layout_width="387dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="5dp"
@@ -178,8 +164,8 @@
                                 android:backgroundTint="@android:color/transparent"
                                 android:onClick="onButtonClick"
                                 android:text="@string/main_menu_drinks"
-                                android:textSize="20sp"
                                 android:textColor="#000000"
+                                android:textSize="20sp"
                                 android:visibility="visible"
                                 app:cornerRadius="0dp" />
 
@@ -196,7 +182,7 @@
                         </FrameLayout>
 
                         <FrameLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
                             <Button
@@ -210,8 +196,8 @@
                                 android:backgroundTint="@android:color/transparent"
                                 android:onClick="onButtonClick"
                                 android:text="@string/main_menu_food"
-                                android:textSize="20sp"
                                 android:textColor="#000000"
+                                android:textSize="20sp"
                                 android:visibility="visible"
                                 app:cornerRadius="0dp" />
 
@@ -227,12 +213,12 @@
                         </FrameLayout>
 
                         <FrameLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
                             <Button
                                 android:id="@+id/button_coffe_at_home"
-                                android:layout_width="387dp"
+                                android:layout_width="393dp"
                                 android:layout_height="90dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="5dp"
@@ -240,9 +226,9 @@
                                 android:layout_marginBottom="10dp"
                                 android:backgroundTint="@android:color/transparent"
                                 android:onClick="onButtonClick"
-                                android:textSize="20sp"
                                 android:text="@string/main_menu_atHomeCoffee"
                                 android:textColor="#000000"
+                                android:textSize="20sp"
                                 android:visibility="visible"
                                 app:cornerRadius="0dp" />
 
@@ -271,9 +257,9 @@
                                 android:layout_marginBottom="10dp"
                                 android:backgroundTint="@android:color/transparent"
                                 android:onClick="onButtonClick"
-                                android:textSize="20sp"
                                 android:text="@string/main_menu_merchendise"
                                 android:textColor="#000000"
+                                android:textSize="20sp"
                                 android:visibility="visible"
                                 app:cornerRadius="0dp" />
 
