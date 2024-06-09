@@ -49,6 +49,10 @@
             android:name=".MainActivity"
             android:exported="false">
         </activity>
+        <activity
+            android:name=".CorzinaActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>
