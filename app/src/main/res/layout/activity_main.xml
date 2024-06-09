@@ -15,80 +15,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="413dp"
-            android:layout_height="110dp"
-            android:layout_marginTop="620dp"
-            android:background="@color/endpanel_main"
-            android:orientation="horizontal"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/ImageButtonHome"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="1"
-                android:background="@color/endpanel_main"
-                android:contentDescription="@string/app_name"
-                android:scaleType="fitCenter"
-                android:src="@drawable/home"
-                tools:src="@drawable/home"
-                tools:srcCompat="@drawable/home" />
-
-            <ImageButton
-                android:id="@+id/imageButtonBascet"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="1"
-                android:background="@color/endpanel_main"
-                android:contentDescription="@string/app_name"
-                android:onClick="onButtonClick"
-                android:scaleType="fitCenter"
-                android:src="@drawable/backet"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-
-            <ImageButton
-                android:id="@+id/button_logout"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="1"
-                android:background="@color/endpanel_main"
-                android:contentDescription="@string/app_name"
-                android:scaleType="fitCenter"
-                android:src="@drawable/imageenter"
-                tools:src="@drawable/imageenter"
-                tools:srcCompat="@drawable/imageenter" />
-        </LinearLayout>
-
 
         <ScrollView
             android:id="@+id/scrollView2"
@@ -274,22 +200,78 @@
 
         </ScrollView>
 
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="110dp"
+            android:background="@color/endpanel_main"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/ImageButtonHome"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="@color/endpanel_main"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home"
+                tools:src="@drawable/home"
+                tools:srcCompat="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/image_button_bascet"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="@color/endpanel_main"
+                android:contentDescription="@string/app_name"
+                android:onClick="onButtonClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/backet"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <ImageButton
+                android:id="@+id/logout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="@color/endpanel_main"
+                android:contentDescription="@string/app_name"
+                android:onClick="logout"
+                android:scaleType="fitCenter"
+                android:src="@drawable/imageenter"
+                tools:src="@drawable/imageenter"
+                tools:srcCompat="@drawable/imageenter" />
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <ImageButton
-        android:id="@+id/Image_button_bascet"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:background="@color/endpanel_main"
-        android:onClick="onButtonClick"
-        android:scaleType="fitCenter"
-        android:src="@drawable/backet"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="475dp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.content.Intent;
 import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +13,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity2 extends AppCompatActivity {
+    private FirebaseAuth mFirebaseAuth;
 
     private Button btn_fragmentLatte,btn_fragmentCappuccino;
     private FrameLayout frameLayout;
@@ -22,6 +26,12 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_coffee);
+
+        ImageButton btn_logout = findViewById(R.id.lgbt_btn);
+
+        mFirebaseAuth = FirebaseAuth.getInstance();
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -71,6 +81,18 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent = new Intent(this, Main3Activity.class);
         intent.putExtra("drink_type", "brave");
         startActivity(intent);
+    }
+
+    public void lgbt(View view) {
+        mFirebaseAuth.signOut();
+        if (view.getId() == R.id.lgbt_btn) {
+            Intent intent = new Intent(this, LogInActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
+
+
+        }
     }
 
 }

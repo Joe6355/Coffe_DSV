@@ -61,7 +61,7 @@
             tools:ignore="MissingConstraints" />
 
         <LinearLayout
-            android:layout_width="413dp"
+            android:layout_width="0dp"
             android:layout_height="110dp"
             android:layout_marginTop="621dp"
             android:orientation="horizontal"
@@ -75,6 +75,7 @@
                 android:id="@+id/ImageButtonHome"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_gravity="center"
                 android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
@@ -83,19 +84,18 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/home"
                 android:background="@color/endpanel_main"
-                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
                 android:scaleType="fitCenter"
+                android:src="@drawable/home"
                 tools:src="@drawable/home"
                 tools:srcCompat="@drawable/home" />
 
             <ImageButton
                 android:id="@+id/imageButtonBascet"
                 android:layout_width="wrap_content"
-                android:layout_gravity="center"
                 android:layout_height="50dp"
+                android:layout_gravity="center"
                 android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
@@ -105,18 +105,18 @@
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
                 android:background="@color/endpanel_main"
-                android:scaleType="fitCenter"
                 android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
                 android:src="@drawable/backet"
                 tools:src="@drawable/backet"
                 tools:srcCompat="@drawable/backet" />
 
             <ImageButton
-                android:id="@+id/logoutButton"
+                android:id="@+id/lgbt_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_margin="15dp"
                 android:layout_gravity="center"
+                android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
@@ -124,9 +124,10 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
-                android:scaleType="fitCenter"
                 android:background="@color/endpanel_main"
                 android:contentDescription="@string/app_name"
+                android:onClick="blogout"
+                android:scaleType="fitCenter"
                 android:src="@drawable/imageenter"
                 tools:src="@drawable/imageenter"
                 tools:srcCompat="@drawable/imageenter" />
