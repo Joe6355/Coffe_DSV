@@ -29,7 +29,7 @@
         <LinearLayout
             android:layout_width="413dp"
             android:layout_height="110dp"
-            android:layout_marginTop="621dp"
+            android:layout_marginTop="300dp"
             android:orientation="horizontal"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +67,6 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
-                android:translationY="30dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
@@ -76,6 +75,7 @@
                 android:contentDescription="@string/app_name"
                 android:scaleType="fitCenter"
                 android:src="@drawable/backet"
+                android:translationY="30dp"
                 tools:src="@drawable/backet"
                 tools:srcCompat="@drawable/backet" />
 
@@ -88,7 +88,6 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
-                android:translationY="30dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
@@ -97,6 +96,7 @@
                 android:contentDescription="@string/app_name"
                 android:scaleType="fitCenter"
                 android:src="@drawable/imageenter"
+                android:translationY="30dp"
                 tools:src="@drawable/imageenter"
                 tools:srcCompat="@drawable/imageenter" />
         </LinearLayout>
@@ -150,18 +150,6 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/linearLayout_promotion">
-
-                        <ImageButton
-                            android:id="@+id/Image_button_bascet"
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:background="@color/endpanel_main"
-                            android:onClick="onButtonClick"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/backet"
-                            tools:ignore="SpeakableTextPresentCheck" />
 
                         <FrameLayout
                             android:layout_width="wrap_content"
@@ -298,6 +286,20 @@
         </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/Image_button_bascet"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/endpanel_main"
+        android:onClick="onButtonClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backet"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="475dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

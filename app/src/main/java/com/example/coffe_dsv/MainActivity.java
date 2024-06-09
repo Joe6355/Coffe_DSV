@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(this, CoffeeAtHomeActivity.class);
         } else if (view.getId() == R.id.button_merchendise) {
             intent = new Intent(this, MerchndiseActivity.class);
+        }else if (view.getId() == R.id.Image_button_bascet) {
+            intent = new Intent(this, CorzinaActivity.class);
         } else {
             intent = new Intent(this, MainActivity.class);
             return;
