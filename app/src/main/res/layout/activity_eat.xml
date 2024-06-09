@@ -96,11 +96,11 @@
                 tools:srcCompat="@drawable/backet" />
 
             <ImageButton
-                android:id="@+id/imageButtonEnter"
+                android:id="@+id/button_logout"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_margin="15dp"
                 android:layout_gravity="center"
+                android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
@@ -108,9 +108,9 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
-                android:scaleType="fitCenter"
                 android:background="@color/endpanel_main"
                 android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
                 android:src="@drawable/imageenter"
                 tools:src="@drawable/imageenter"
                 tools:srcCompat="@drawable/imageenter" />

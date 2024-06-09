@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -23,7 +22,6 @@ public class EatActivity extends Activity {
             return insets;
         });
     }
-
 
 
     public void onPancakesButtonClick(View view) {
@@ -49,5 +47,5 @@ public class EatActivity extends Activity {
         intent.putExtra("drink_type", "omelet");
         startActivity(intent);
     }
-}
 
+}
