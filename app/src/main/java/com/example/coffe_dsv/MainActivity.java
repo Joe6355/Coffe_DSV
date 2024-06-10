@@ -2,8 +2,10 @@ package com.example.coffe_dsv;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +15,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth;
+
+    private ImageView imageViewBanner;
+    private List<Integer> imageList;
+    private Handler handler = new Handler();
+    private Runnable runnable;
+    private int currentIndex = 0;
 
 
     @Override
@@ -26,6 +37,27 @@ public class MainActivity extends AppCompatActivity {
         ImageButton btn_logout = findViewById(R.id.logout_btn);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
+
+        imageViewBanner = findViewById(R.id.imageButton_promotion);
+        imageList = new ArrayList<>();
+        imageList.add(R.drawable.zactavka1);
+        imageList.add(R.drawable.zactavka6);
+        imageList.add(R.drawable.zactavka5);
+
+        // Установить первое изображение
+        imageViewBanner.setImageResource(imageList.get(currentIndex));
+
+        // Автоматическая смена изображений
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                currentIndex = (currentIndex + 1) % imageList.size();
+                imageViewBanner.setImageResource(imageList.get(currentIndex));
+                handler.postDelayed(this, 3000); // Менять изображения каждые 3 секунды
+            }
+        };
+
+        handler.postDelayed(runnable, 3000);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -71,5 +103,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        handler.removeCallbacks(runnable);
     }
 }
