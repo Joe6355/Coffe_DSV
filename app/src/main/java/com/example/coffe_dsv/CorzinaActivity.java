@@ -1,12 +1,12 @@
 package com.example.coffe_dsv;
+
 import android.os.Bundle;
-import android.view.View;
+import androidx.appcompat.app.AppCompatActivity;
+import android.widget.ListView;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
+import android.view.View;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class CorzinaActivity extends AppCompatActivity {
 
@@ -50,6 +50,7 @@ public class CorzinaActivity extends AppCompatActivity {
         });
     }
 }
+
 
 
 

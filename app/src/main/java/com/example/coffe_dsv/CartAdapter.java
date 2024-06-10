@@ -45,10 +45,12 @@ public class CartAdapter extends BaseAdapter {
 
         ImageView itemImage = convertView.findViewById(R.id.item_image);
         TextView itemName = convertView.findViewById(R.id.item_name);
+        TextView itemPrice = convertView.findViewById(R.id.item_price);
         Button removeButton = convertView.findViewById(R.id.remove_button);
 
         itemImage.setImageResource(item.getImageResource());
         itemName.setText(item.getName());
+        itemPrice.setText(String.format("$%.2f", item.getPrice()));  // Установить цену
 
         removeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,3 +63,5 @@ public class CartAdapter extends BaseAdapter {
         return convertView;
     }
 }
+
+
