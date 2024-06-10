@@ -17,43 +17,26 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="0dp"
-            android:layout_height="115dp"
-            android:layout_marginTop="616dp"
-            android:background="@color/endpanel_main"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
             android:id="@+id/imageView52"
             android:layout_width="0dp"
             android:layout_height="115dp"
-            android:layout_marginBottom="498dp"
             android:background="@color/endpanel_main"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/imageView5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.515"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="110dp"
-            android:layout_marginTop="621dp"
+            android:background="@color/endpanel_main"
             android:orientation="horizontal"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintStart_toStartOf="parent">
 
             <ImageButton
                 android:id="@+id/ImageButtonHome"
@@ -100,7 +83,7 @@
             <ImageButton
                 android:id="@+id/image_logout"
                 android:layout_width="wrap_content"
-                android:layout_height="66dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_margin="15dp"
                 android:layout_marginStart="15dp"
@@ -118,6 +101,18 @@
                 tools:src="@drawable/imageenter"
                 tools:srcCompat="@drawable/imageenter" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/Eat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Еда"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView52"
+            app:layout_constraintEnd_toEndOf="@+id/imageView52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView52" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

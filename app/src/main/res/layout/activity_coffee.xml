@@ -45,6 +45,19 @@
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:id="@+id/Eat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кофе"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView52"
+            app:layout_constraintEnd_toEndOf="@+id/imageView52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView52" />
+
+
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="410dp"
@@ -345,6 +358,7 @@
             android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/home"
+            android:translationY="5dp"
             tools:src="@drawable/home"
             tools:srcCompat="@drawable/home" />
 
@@ -366,13 +380,14 @@
             android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/backet"
+            android:translationY="5dp"
             tools:src="@drawable/backet"
             tools:srcCompat="@drawable/backet" />
 
         <ImageButton
             android:id="@+id/image_logout"
             android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="15dp"
             android:layout_marginStart="15dp"
@@ -387,6 +402,7 @@
             android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/imageenter"
+            android:translationY="5dp"
             tools:src="@drawable/imageenter"
             tools:srcCompat="@drawable/imageenter" />
     </LinearLayout>
