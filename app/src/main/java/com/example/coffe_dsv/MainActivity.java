@@ -13,10 +13,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth;
@@ -59,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
 
         handler.postDelayed(runnable, 3000);
 
+
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -70,28 +75,31 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClick(View view) {
         Intent intent = null;
+        int id = view.getId();
 
-        if (view.getId() == R.id.button_coffe) {
+        if (id == R.id.button_coffe) {
             intent = new Intent(this, MainActivity2.class);
-        } else if (view.getId() == R.id.button_eat) {
+        } else if (id == R.id.button_eat) {
             intent = new Intent(this, EatActivity.class);
-        } else if (view.getId() == R.id.button_coffe_at_home) {
+        } else if (id == R.id.button_coffe_at_home) {
             intent = new Intent(this, CoffeeAtHomeActivity.class);
-        } else if (view.getId() == R.id.button_merchendise) {
+        } else if (id == R.id.button_merchendise) {
             intent = new Intent(this, MerchndiseActivity.class);
-        } else if (view.getId() == R.id.image_button_bascet) {
+        } else if (id == R.id.image_button_bascet) {
             intent = new Intent(this, CorzinaActivity.class);
-        } else {
+        } else if (id == R.id.ImageButtonHome) {
             intent = new Intent(this, MainActivity.class);
-            return;
+        }else {
+            intent = new Intent(this, MainActivity.class);
         }
 
         if (intent != null) {
             startActivity(intent);
-
         }
-
     }
+
+
+
 
     public void logout(View view) {
         mFirebaseAuth.signOut();
@@ -100,8 +108,6 @@ public class MainActivity extends AppCompatActivity {
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
             finish();
-
-
         }
     }
     @Override

@@ -320,12 +320,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        android:layout_width="413dp"
-        android:layout_height="110dp"
+        android:layout_width="409dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="645dp"
         android:orientation="horizontal"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout">
 
         <ImageButton
             android:id="@+id/ImageButtonHome"
@@ -342,6 +345,7 @@
             android:layout_weight="1"
             android:background="@color/endpanel_main"
             android:contentDescription="@string/app_name"
+            android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/home"
             tools:src="@drawable/home"
@@ -362,6 +366,7 @@
             android:layout_weight="1"
             android:background="@color/endpanel_main"
             android:contentDescription="@string/app_name"
+            android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/backet"
             tools:src="@drawable/backet"
@@ -370,7 +375,7 @@
         <ImageButton
             android:id="@+id/lgbt_btn"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="46dp"
             android:layout_gravity="center"
             android:layout_margin="15dp"
             android:layout_marginStart="15dp"
@@ -380,9 +385,9 @@
             android:layout_marginRight="15dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:onClick="lgbt"
             android:background="@color/endpanel_main"
             android:contentDescription="@string/app_name"
+            android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/imageenter"
             tools:src="@drawable/imageenter"

@@ -30,25 +30,16 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="567dp">
 
                     <LinearLayout
                         android:id="@+id/linearLayout_promotion"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="412dp"
+                        android:layout_height="617dp"
                         android:orientation="horizontal"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
-
-                        <ImageView
-                            android:id="@+id/imageButton_promotion"
-                            android:layout_width="200dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="200"
-                            android:backgroundTint="@android:color/transparent"
-                            android:contentDescription="@string/app_name"
-                            app:srcCompat="@drawable/ic_launcher_foreground" />
 
                     </LinearLayout>
 
@@ -222,6 +213,7 @@
                 android:layout_weight="1"
                 android:background="@color/endpanel_main"
                 android:contentDescription="@string/app_name"
+                android:onClick="onButtonClick"
                 android:scaleType="fitCenter"
                 android:src="@drawable/home"
                 tools:src="@drawable/home"
@@ -271,5 +263,17 @@
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageButton_promotion"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:layout_weight="200"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

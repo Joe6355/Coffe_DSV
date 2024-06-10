@@ -54,4 +54,29 @@ public class CoffeeAtHomeActivity extends AppCompatActivity {
             finish();
         }
     }
+
+    public void onButtonClick(View view) {
+        Intent intent = null;
+        int id = view.getId();
+
+        if (id == R.id.ImageButtonHome) {
+            intent = new Intent(this, MainActivity.class);
+        } else if (id == R.id.imageButtonBascet) {
+            intent = new Intent(this, CorzinaActivity.class);
+        } else if (id == R.id.lgbt_btn) {
+            mFirebaseAuth.signOut();
+            if (view.getId() == R.id.logout_btn) {
+                intent = new Intent(this, LogInActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
+            }
+        }else {
+            intent = new Intent(this, MainActivity.class);
+        }
+
+        if (intent != null) {
+            startActivity(intent);
+        }
+    }
 }
