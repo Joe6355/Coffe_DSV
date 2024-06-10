@@ -35,7 +35,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "latte":
                     fragment = new LatteFragment();
                     itemProduct = 1;
-                    itemName = "Latte";
+                    itemName = "Латте";
                     getItemName = "Латте";
                     itemImageResource = R.drawable.latte;
                     itemPrice = 5.0;
@@ -43,7 +43,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "cappuccino":
                     fragment = new CappuccinoFragment();
                     itemProduct = 2;
-                    itemName = "Cappuccino";
+                    itemName = "Капучино";
                     getItemName = "Капучино";
                     itemImageResource = R.drawable.cappuchhino;
                     itemPrice = 4.5;
@@ -51,7 +51,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "raf":
                     fragment = new RafFragment();
                     itemProduct = 3;
-                    itemName = "Raf";
+                    itemName = "Раф";
                     getItemName = "Раф";
                     itemImageResource = R.drawable.raf;
                     itemPrice = 6.0;
@@ -59,7 +59,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "americano":
                     fragment = new AmericanoFragment();
                     itemProduct = 4;
-                    itemName = "Americano";
+                    itemName = "Американо";
                     getItemName = "Американо";
                     itemImageResource = R.drawable.americano;
                     itemPrice = 3.5;
@@ -67,7 +67,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "flatWhite":
                     fragment = new FlatWhiteFragment();
                     itemProduct = 5;
-                    itemName = "Flat White";
+                    itemName = "Флат вайт";
                     getItemName = "Флат вайт";
                     itemImageResource = R.drawable.flatwhite;
                     itemPrice = 5.5;
@@ -75,7 +75,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "macchiato":
                     fragment = new macchiatoFragment();
                     itemProduct = 6;
-                    itemName = "Macchiato";
+                    itemName = "Маккиатоo";
                     getItemName = "Маккиато";
                     itemImageResource = R.drawable.macchiato;
                     itemPrice = 4.0;
@@ -83,7 +83,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "lungo":
                     fragment = new LungoFragment();
                     itemProduct = 7;
-                    itemName = "Lungo";
+                    itemName = "Лунго";
                     getItemName = "Лунго";
                     itemImageResource = R.drawable.lungo;
                     itemPrice = 3.8;
@@ -91,7 +91,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "brave":
                     fragment = new BraveFragment();
                     itemProduct = 8;
-                    itemName = "Brave";
+                    itemName = "Брав";
                     getItemName = "Брав";
                     itemImageResource = R.drawable.breve;
                     itemPrice = 5.0;
@@ -99,7 +99,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "pancakes":
                     fragment = new PancakesFragment();
                     itemProduct = 9;
-                    itemName = "Pancakes";
+                    itemName = "Блины";
                     getItemName = "Блины";
                     itemImageResource = R.drawable.pancakes;
                     itemPrice = 7.0;
@@ -107,7 +107,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "fritter":
                     fragment = new FritterFragment();
                     itemProduct = 10;
-                    itemName = "Fritter";
+                    itemName = "Оладьи";
                     getItemName = "Оладьи";
                     itemImageResource = R.drawable.fritter;
                     itemPrice = 6.5;
@@ -115,7 +115,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "sandwiches":
                     fragment = new SandwichFragment();
                     itemProduct = 11;
-                    itemName = "Sandwiches";
+                    itemName = "Бутерброд";
                     getItemName = "Бутерброд";
                     itemImageResource = R.drawable.sandwich;
                     itemPrice = 8.0;
@@ -123,7 +123,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "omelet":
                     fragment = new OmletFragment();
                     itemProduct = 12;
-                    itemName = "Omelet";
+                    itemName = "Омлет";
                     getItemName = "Омлет";
                     itemImageResource = R.drawable.omlet;
                     itemPrice = 5.5;
@@ -131,7 +131,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "zerno1":
                     fragment = new Zerno1Fragment();
                     itemProduct = 13;
-                    itemName = "Zerno1";
+                    itemName = "Lebo Gold";
                     getItemName = "Lebo Gold";
                     itemImageResource = R.drawable.nopemerchendais;
                     itemPrice = 12.0;
@@ -139,7 +139,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "zerno2":
                     fragment = new Zerno2Fragment();
                     itemProduct = 14;
-                    itemName = "Zerno2";
+                    itemName = "Noir Egoiste";
                     getItemName = "Noir Egoiste";
                     itemImageResource = R.drawable.nopemerchendais;
                     itemPrice = 15.0;
@@ -147,7 +147,7 @@ public class Main3Activity extends AppCompatActivity {
                 case "cup":
                     fragment = new CupFragment();
                     itemProduct = 15;
-                    itemName = "Cup";
+                    itemName = "Кружка";
                     getItemName = "Кружка";
                     itemImageResource = R.drawable.nopemerchendais;
                     itemPrice = 2.5;

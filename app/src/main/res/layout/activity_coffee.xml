@@ -358,7 +358,7 @@
             android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/home"
-            android:translationY="5dp"
+            android:translationY="15dp"
             tools:src="@drawable/home"
             tools:srcCompat="@drawable/home" />
 
@@ -380,7 +380,7 @@
             android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/backet"
-            android:translationY="5dp"
+            android:translationY="15dp"
             tools:src="@drawable/backet"
             tools:srcCompat="@drawable/backet" />
 
@@ -402,7 +402,7 @@
             android:onClick="onButtonClick"
             android:scaleType="fitCenter"
             android:src="@drawable/imageenter"
-            android:translationY="5dp"
+            android:translationY="15dp"
             tools:src="@drawable/imageenter"
             tools:srcCompat="@drawable/imageenter" />
     </LinearLayout>

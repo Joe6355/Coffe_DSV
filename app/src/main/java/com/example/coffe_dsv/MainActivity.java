@@ -42,16 +42,19 @@ public class MainActivity extends AppCompatActivity {
 
         imageViewBanner = findViewById(R.id.imageButton_promotion);
         imageList = new ArrayList<>();
+        imageViewBanner.setScaleType(ImageView.ScaleType.FIT_XY);
         imageList.add(R.drawable.zactavka1);
         imageList.add(R.drawable.zactavka6);
         imageList.add(R.drawable.zactavka5);
-        imageViewBanner.setAdjustViewBounds(true);// Установка масштабирования под размер кнопки
+
+
 // Установить первое изображение
         imageViewBanner.setImageResource(imageList.get(currentIndex));
 // Автоматическая смена изображений
         runnable = new Runnable() {
             @Override
             public void run() {
+                imageViewBanner.setScaleType(ImageView.ScaleType.FIT_XY);
                 currentIndex = (currentIndex + 1) % imageList.size();
                 imageViewBanner.setImageResource(imageList.get(currentIndex));
                 handler.postDelayed(this, 3000); // Менять изображения каждые 3 секунды
