@@ -45,11 +45,10 @@ public class MainActivity extends AppCompatActivity {
         imageList.add(R.drawable.zactavka1);
         imageList.add(R.drawable.zactavka6);
         imageList.add(R.drawable.zactavka5);
-
-        // Установить первое изображение
+        imageViewBanner.setAdjustViewBounds(true);// Установка масштабирования под размер кнопки
+// Установить первое изображение
         imageViewBanner.setImageResource(imageList.get(currentIndex));
-
-        // Автоматическая смена изображений
+// Автоматическая смена изображений
         runnable = new Runnable() {
             @Override
             public void run() {

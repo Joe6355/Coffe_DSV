@@ -16,6 +16,7 @@ public class Main3Activity extends AppCompatActivity {
     private String itemName;
     private int itemImageResource;
     private double itemPrice;
+    private String getItemName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +36,15 @@ public class Main3Activity extends AppCompatActivity {
                     fragment = new LatteFragment();
                     itemProduct = 1;
                     itemName = "Latte";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Латте";
+                    itemImageResource = R.drawable.latte;
                     itemPrice = 5.0;
                     break;
                 case "cappuccino":
                     fragment = new CappuccinoFragment();
                     itemProduct = 2;
                     itemName = "Cappuccino";
+                    getItemName = "Капучино";
                     itemImageResource = R.drawable.cappuchhino;
                     itemPrice = 4.5;
                     break;
@@ -49,13 +52,15 @@ public class Main3Activity extends AppCompatActivity {
                     fragment = new RafFragment();
                     itemProduct = 3;
                     itemName = "Raf";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Раф";
+                    itemImageResource = R.drawable.raf;
                     itemPrice = 6.0;
                     break;
                 case "americano":
                     fragment = new AmericanoFragment();
                     itemProduct = 4;
                     itemName = "Americano";
+                    getItemName = "Американо";
                     itemImageResource = R.drawable.americano;
                     itemPrice = 3.5;
                     break;
@@ -63,77 +68,88 @@ public class Main3Activity extends AppCompatActivity {
                     fragment = new FlatWhiteFragment();
                     itemProduct = 5;
                     itemName = "Flat White";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Флат вайт";
+                    itemImageResource = R.drawable.flatwhite;
                     itemPrice = 5.5;
                     break;
                 case "macchiato":
                     fragment = new macchiatoFragment();
                     itemProduct = 6;
                     itemName = "Macchiato";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Маккиато";
+                    itemImageResource = R.drawable.macchiato;
                     itemPrice = 4.0;
                     break;
                 case "lungo":
                     fragment = new LungoFragment();
                     itemProduct = 7;
                     itemName = "Lungo";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Лунго";
+                    itemImageResource = R.drawable.lungo;
                     itemPrice = 3.8;
                     break;
                 case "brave":
                     fragment = new BraveFragment();
                     itemProduct = 8;
                     itemName = "Brave";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Брав";
+                    itemImageResource = R.drawable.breve;
                     itemPrice = 5.0;
                     break;
                 case "pancakes":
                     fragment = new PancakesFragment();
                     itemProduct = 9;
                     itemName = "Pancakes";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Блины";
+                    itemImageResource = R.drawable.pancakes;
                     itemPrice = 7.0;
                     break;
                 case "fritter":
                     fragment = new FritterFragment();
                     itemProduct = 10;
                     itemName = "Fritter";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Оладьи";
+                    itemImageResource = R.drawable.fritter;
                     itemPrice = 6.5;
                     break;
                 case "sandwiches":
                     fragment = new SandwichFragment();
                     itemProduct = 11;
                     itemName = "Sandwiches";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Бутерброд";
+                    itemImageResource = R.drawable.sandwich;
                     itemPrice = 8.0;
                     break;
                 case "omelet":
                     fragment = new OmletFragment();
                     itemProduct = 12;
                     itemName = "Omelet";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Омлет";
+                    itemImageResource = R.drawable.omlet;
                     itemPrice = 5.5;
                     break;
                 case "zerno1":
                     fragment = new Zerno1Fragment();
                     itemProduct = 13;
                     itemName = "Zerno1";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Lebo Gold";
+                    itemImageResource = R.drawable.nopemerchendais;
                     itemPrice = 12.0;
                     break;
                 case "zerno2":
                     fragment = new Zerno2Fragment();
                     itemProduct = 14;
                     itemName = "Zerno2";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Noir Egoiste";
+                    itemImageResource = R.drawable.nopemerchendais;
                     itemPrice = 15.0;
                     break;
                 case "cup":
                     fragment = new CupFragment();
                     itemProduct = 15;
                     itemName = "Cup";
-                    itemImageResource = R.drawable.americano;
+                    getItemName = "Кружка";
+                    itemImageResource = R.drawable.nopemerchendais;
                     itemPrice = 2.5;
                     break;
                 default:
@@ -150,6 +166,11 @@ public class Main3Activity extends AppCompatActivity {
             TextView itemPriceTextView = findViewById(R.id.item_price_main);
             if (itemPriceTextView != null) {
                 itemPriceTextView.setText(String.format("$%.2f", itemPrice));
+            }
+
+            TextView itemNameTextView = findViewById(R.id.item_name_main);
+            if (itemNameTextView != null) {
+                itemNameTextView.setText(getItemName); // Установка имени товара в TextView
             }
 
         }
