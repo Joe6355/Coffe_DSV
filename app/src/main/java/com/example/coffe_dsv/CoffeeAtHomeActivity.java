@@ -23,7 +23,7 @@ public class CoffeeAtHomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_coffee_at_home);
 
 
-        ImageButton b_logout = findViewById(R.id.lgbt_btn);
+        ImageButton b_logout = findViewById(R.id.image_logout);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
@@ -47,7 +47,7 @@ public class CoffeeAtHomeActivity extends AppCompatActivity {
 
     public void blogout(View view) {
         mFirebaseAuth.signOut();
-        if (view.getId() == R.id.lgbt_btn) {
+        if (view.getId() == R.id.image_logout) {
             Intent intent = new Intent(this, LogInActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
@@ -63,7 +63,7 @@ public class CoffeeAtHomeActivity extends AppCompatActivity {
             intent = new Intent(this, MainActivity.class);
         } else if (id == R.id.imageButtonBascet) {
             intent = new Intent(this, CorzinaActivity.class);
-        } else if (id == R.id.lgbt_btn) {
+        } else if (id == R.id.image_logout) {
             mFirebaseAuth.signOut();
             if (view.getId() == R.id.logout_btn) {
                 intent = new Intent(this, LogInActivity.class);

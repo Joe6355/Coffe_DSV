@@ -22,7 +22,7 @@ public class MerchndiseActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_merchndise);
 
-        ImageButton b_logout = findViewById(R.id.lgbt_btn);
+        ImageButton b_logout = findViewById(R.id.image_logout);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
@@ -40,7 +40,7 @@ public class MerchndiseActivity extends AppCompatActivity {
     }
 
     public void blogout(View view) {
-        if (view.getId() == R.id.lgbt_btn) {
+        if (view.getId() == R.id.image_logout) {
             Intent intent = new Intent(this, LogInActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
@@ -50,7 +50,7 @@ public class MerchndiseActivity extends AppCompatActivity {
 
     public void lgbt(View view) {
         mFirebaseAuth.signOut();
-        if (view.getId() == R.id.lgbt_btn) {
+        if (view.getId() == R.id.image_logout) {
             Intent intent = new Intent(this, LogInActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
