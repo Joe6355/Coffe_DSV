@@ -13,7 +13,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
@@ -28,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
     private Handler handler = new Handler();
     private Runnable runnable;
     private int currentIndex = 0;
+
+    //static {
+       // AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+    //}
 
 
     @Override
