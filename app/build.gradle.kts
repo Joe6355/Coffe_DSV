@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.coffe_dsv"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.coffe_dsv"
@@ -48,6 +48,13 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-auth")
+    implementation(libs.retrofit2.converter.gson)
+    implementation(libs.okhttp)
+    //implementation(libs.okhttp)
+    implementation(libs.gson)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+
 
     //implementation ("androidx.databinding:databinding-adapters:4.1.1")
     //implementation ("androidx.databinding:databinding-runtime:4.1.1")

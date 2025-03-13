@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Coffe_DSV</string>
+    <string name="app_name">Кофейня</string>
     <string name="main_menu_text"> Меню </string>
     <string name="main_menu_drinks">Напитки</string>
     <string name="main_menu_food">Еда</string>
     <string name="main_menu_atHomeCoffee">Домашний Кофе</string>
-    <string name="main_menu_merchendise">Товары</string>
+    <string name="main_menu_merchendise">Погода</string>
     <string name="latte">Латте</string>
     <string name="raf">Раф</string>
     <string name="coffe1">Lebo Gold</string>
@@ -33,11 +33,13 @@
     <string name="Enter">Зарегестрироваться/Войти</string>
     <string name="JustEnter">Войти</string>
     <string name="order">Заказать</string>
+    <string name="Convert">Конвертироовать</string>
     <string name="addtothehorder">Добавить к заказу</string>
     <string name="nopemerchendais">ТОВАР ОТСУТСВУЕТ</string>
     <string name="Logdain">ДОБРО ПОЖАЛОВАТЬ</string>
     <string name="Reg">Зарегистрироваться</string>
-
+    <string name="choose_currency_from">Выберите валюту</string>
+    <string name="choose_currency_to">Выберите валюту</string>
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>

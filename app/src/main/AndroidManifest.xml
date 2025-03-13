@@ -35,7 +35,8 @@
             android:exported="false" />
         <activity
             android:name=".MerchndiseActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:hardwareAccelerated="false"/>
         <activity
             android:name=".CoffeeAtHomeActivity"
             android:exported="false" />
